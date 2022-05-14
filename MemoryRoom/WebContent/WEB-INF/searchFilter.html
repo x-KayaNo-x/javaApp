@@ -1,0 +1,23 @@
+<%@page pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<form action="../servlet/Search" method="get">
+<p>↓検索できるよ</p>
+<p>
+<select name="junle">
+<option value="artist">歌手名</option>
+<option value="cd">CD</option>
+<option value="song">曲名</option>
+</select>
+<input type="search" name="keyword">
+<input type="submit" value="検索">
+</p>
+<p>
+[CD]
+<input type="radio" name="possession" value="2" checked>指定なし
+<input type="radio" name="possession" value="1" >所持
+<input type="radio" name="possession" value="0" >未所持
+</p>
+</form>
+
+
